@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+dj</title>
+</head>
+<body><p id="demo"></p>
+<script type="text/javascript">
+//first step create function 
+//pass the value in the contructing elelment
+function person(first, last , age , eye){
+
+	this.firstname = first;
+	this.lastname = last ;
+	this.age = age;
+	this.eyecolor = eye;
+
+}
+var myfather  =new person("john","doe",50,"blue");
+var mymother  = new person ("donny", "devi" , 100, "red");
+
+document.getElementById('demo').innerHTML = "my father is" + myfather.age+"my mother is" + mymother.age;
+</script>
+</body>
+</html>

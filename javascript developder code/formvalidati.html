@@ -1,0 +1,50 @@
+<html>
+
+<head>
+  <title>
+    validation in JavaScript
+  </title>
+<script>
+function validate(){
+if(document.myform.name.value=="")
+{
+alert ("enter the validate name");
+
+return false;
+
+}
+if (document.myform.phone.value=="" ||
+isNaN(document.myform.phone.value)||
+document.myform.phone.value.length! = 10) {
+alert ("please enter the valid phone no");
+return false;
+}
+
+
+
+}
+</script>
+
+</head>
+
+
+<body>
+  <form action="" name="myform" onsubmit="return(validate());" >
+
+<label>Enter your name </label>
+    <input type="text" name="name" />
+
+<label>  Enter your phone no </label>
+    <input type ="text" name="phone"/>
+
+<select name="country" >
+  <option value="-1">[Choose your option]</option>
+  <option value="1">usa</option>
+  <option value="2">India</option>
+  <option value="3">UK</option>
+</select>
+<input type="submit" value="Submit your data" />
+
+</form>
+</body>
+</html>

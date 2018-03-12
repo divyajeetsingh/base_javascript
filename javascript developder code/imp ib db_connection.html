@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+<body>
+  <p> Creating and using an object method </p>
+  <p> An object method is a function definition  ,stored a a property vale. </p>
+  <p id ="demo "> </p>
+  <script>
+    var google = {
+name :"googlecompany",
+work : "search engine",
+how:"manageing whole",
+last:function (){
+  return this.name+" "+this.work
+}
+};//having error on this code
+// linkof this code is https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_method
+document.getElementById("demo").innerHTML = google.last();
+
+    </script>
+
+  </body>
+  </html>

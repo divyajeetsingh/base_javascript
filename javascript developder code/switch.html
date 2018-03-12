@@ -1,0 +1,33 @@
+<html>
+<body>
+  <p>Click the button to display a dialog box which will ask for your favorite drink,</p>
+  <p id="demo"></p>
+  <button onclick="Myfunction()" >click here </button>
+  <script>
+
+  function Myfunction() {
+
+    var text;
+    var favDrink = prompt("What's your favourit cocktail drink?","Daiquri");
+    switch(favDrink){
+
+case "Martini":
+text = "Execellent choice . Martini is good for yor soul.";
+break;
+case "Daiquri":
+text = "Really? It is good choice";
+break;
+default:
+text = "I have never heard of that one..";
+
+
+
+    }
+    document.getElementById("demo").innerHTML = text;
+
+
+  }
+
+  </script>
+</body>
+</html>
